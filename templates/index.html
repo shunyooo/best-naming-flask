@@ -16,7 +16,7 @@
 
 <div class='description-section section'>
     <div class="center-content">
-        <div class="intro-description">「Best Naming」は日本語から最適な命名を提案します。プログラミングって難しいですよね。特に変数の命名は超難しいです。Best Namingでは日本語の入力から素晴らしい命名を提案します。</div>
+        <div class="intro-description">「Best Naming」は日本語から最適な命名を提案します。プログラミングはとても難しいです。特に変数の命名は悩んでしまいます。Best Namingでは日本語の入力から素晴らしい先人たちが残したコードを検索し、説得力に満ちた命名を提案します。</div>
     </div>
 </div>
 
@@ -29,6 +29,7 @@
     </div>
   </div>
  -->
+
   <div>
     <input id="text-input" class="textbox" type="text" name="q" placeholder="Search">
   </div>
@@ -107,7 +108,7 @@
             const result_li_clone = document.importNode(result_li, true);
             $('.query', result_li_clone).text(data.var);
             $('.star', result_li_clone).text(data.star);
-            $('.repo', result_li_clone).text(data.repo);
+            $('.repo', result_li_clone).html(`<a href="${data.url}">${data.repo}</a>`) //.text(data.repo);
             $('.result-list').append(result_li_clone);
         }
 
@@ -210,7 +211,7 @@ h1 {
   transition: all .3s;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
-  font-size: 16px;
+  font-size: 20px;
   outline: none;
   /*background-color: #acacac;*/
 }

@@ -19,7 +19,7 @@ config.read('config.ini')
 
 import json
 
-app = Flask(__name__,static_folder='static', static_url_path='')
+app = Flask(__name__, static_folder='static', static_url_path='')
 CORS(app)
 
 @app.route('/')
@@ -146,4 +146,4 @@ if __name__ == '__main__':
   host = config['app']['HOST']
   port = config['app']['PORT']
   print("app starting...(host:{host},port:{port})".format(host=host,port=port))
-  app.run(host=host, port=port, debug=True)
+  app.run(host=host, port=port, debug=False)
