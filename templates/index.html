@@ -1,4 +1,10 @@
 {% extends "base.html" %}
+
+{% block title %}
+Best Naming
+{% endblock %}
+
+
 {% block content %}
 <template id="result-li-template">
     <li class="result-li clearfix">
@@ -95,20 +101,28 @@
           $('.trans-result').text(data['trans_en'])
 
           // リスト埋める
-          add_display_result_li({'var': '変数', 'star': 'スター数', 'repo': 'レポジトリ名'})
+          add_display_result_li({'var': '変数', 'star': 'スター数', 'repo': 'レポジトリ名'}, false)
           for (const sim of data['top_similar']){
             console.log(sim);
-            add_display_result_li(sim);
+            add_display_result_li(sim, true);
           }
         }
 
-        const add_display_result_li = (data) => {
+        const add_display_result_li = (data, isContent) => {
             console.log(data);
             const result_li = $('#result-li-template')[0].content;
             const result_li_clone = document.importNode(result_li, true);
-            $('.query', result_li_clone).text(data.var);
+            if (isContent){
+              $('.query', result_li_clone).html(`<a href="${data.url}/search?q=${data.var}&unscoped_q=${data.var}">${data.var}</a>`);
+            } else {
+              $('.query', result_li_clone).text(data.var);
+            }
             $('.star', result_li_clone).text(data.star);
-            $('.repo', result_li_clone).html(`<a href="${data.url}">${data.repo}</a>`) //.text(data.repo);
+            if (data.url){
+              $('.repo', result_li_clone).html(`<a href="${data.url}">${data.repo}</a>`);
+            } else {
+              $('.repo', result_li_clone).text(data.repo);
+            }
             $('.result-list').append(result_li_clone);
         }
 
