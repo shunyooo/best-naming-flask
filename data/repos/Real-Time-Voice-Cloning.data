@@ -1,0 +1,1102 @@
+https://github.com/CorentinJ/Real-Time-Voice-Cloning,CorentinJ/Real-Time-Voice-Cloning,5390,617
+input_seqs
+token_target_max_len
+vad_max_silence_length
+cell_state
+func
+		token_target
+urrent_ax
+sim_matrix2[mask]
+default_text
+activated
+		len_test_indices
+egularization_loss
+frame_shift_ms
+dollar_unit
+implementation_string
+			cell_state
+max_saved_utterances
+ower_regularization_loss
+stop_tokens
+c1
+		dtype
+mel_frames
+wav_path
+onv_in
+		next_state
+insign
+segments
+zoneout_cell
+tower_gradients
+batched
+max_offsets
+aux
+		size_per_device
+spec
+config.gpu_options.allow_growth
+ta
+hidden_fine
+lear_button
+args.syn_dir
+n_priority_freq
+voc_lr
+ample_data
+rojection_kernel_size
+lout_int
+			expanded_alignments
+entries
+ret[width:]
+wavs
+projected_residual
+andom_speaker_button
+	seq
+rnn2
+ast_update_timestamp
+rnn1
+noise_mean
+low_mem
+target_seqs
+masked_l1_low
+output_lengths
+item
+tower_residual
+max_iters
+peaker_cycler
+		title
+indices
+total_regularization_loss
+heading
+			self.stop_at_any
+ynthesize_button
+zm
+preprocessed_wav
+er_win
+coarse_pred
+gru_cell
+num_freq
+speaker_embeddings
+d
+max_len
+distrib
+tep
+_symbol_to_id
+profiler
+progress_callback
+specs
+zs
+index
+ower_stop_token_prediction
+		self.test_steps
+log_scales
+mels
+tensorboard_dir
+		self.location_convolution
+cell
+wav_range
+time_string
+		cell_outputs
+b_fine_u
+		self._output_layer
+seqs
+	fig
+_alt_re
+		mel_target
+metadata
+gpu_properties
+ower_input_lengths
+			r
+fade_out
+_layer
+save_dir
+vad_window_length
+end_times
+hours
+ast_tick
+sig2
+	ax
+temp_body
+ratio
+hidden_coarse
+		test_indices
+_curly_re
+		_file
+centroids_incl
+voc_upsample_factors
+items
+k
+losses
+r_win
+fpath
+plus_in
+wav_fpath
+			processed_query
+peaker_box
+		outputs
+mel_win
+				cell_outputs
+hop_length
+		ax2
+		ax1
+shuffle
+voc_target
+dtype
+feed_dict[self.split_infos]
+log_string
+total_after_loss
+model_num_layers
+		indices
+vis
+model_fpath
+existing_fnames
+voc_overlap
+total
+urrent_generated
+perc
+embedding.metadata_path
+s_training
+vocoder_fpaths
+eye
+source_sr
+			mel_targets
+			layer_output_shape
+symbol
+vis_layout
+argets
+nput_lengths
+		alignments
+args.out_dir
+msg
+		embed_targets
+cent_unit
+I_r
+grads_vars
+			self._enqueue_op
+saved_mels_paths
+decoder_init_state
+plot_dir
+gen_layout
+config.model_checkpoint_path
+n_frames
+oot
+mean_l1_low
+gru_cell.bias_hh.data
+		tfr
+weights_dir
+gta_fpaths
+sample
+ground_truth
+timesteps
+recognized_datasets
+map_hot
+							align
+word
+ers
+_pounds_re
+quant
+mid_in
+			self.eval
+mu
+ense
+oss
+values
+			self._target_pad
+v
+cond
+val_speaker_embeddings
+data_len
+			self._eval_enqueue_op
+ower_loss
+tterance_history
+silence_times
+ias_u
+synthesizer_model_dirs
+		alignment_history
+vocoder_items
+linear_outputs
+imilarity_weight
+states
+		token_targets
+ias_r
+	_slack_url
+ecord_button
+mel
+_classes
+logits
+axis
+ernel_size
+linear_specs_projection
+			finished
+browser_layout
+end
+split_device
+fade_len
+stop_token_prediction
+decoder_output
+no_action
+length
+1
+		prenet_output
+sig
+out_fname
+config
+size_per_device
+embed_filenames
+mel_filenames
+wavenet_batch_size
+test_summary
+mel_outputs
+S_complex
+speakers_root
+osses
+after
+andom_dataset_button
+reg_weight_scaler
+nn_layers
+		normalization_function
+metadata_fpath
+gammak
+mbedding_table
+device_id
+a
+mask_
+mel_target_max_len
+coarse
+nn_dims
+ux_dims
+device_target
+linear_loss
+		alignment
+fine
+cdf_delta
+_characters
+		im
+log_one_minus_cdf_min
+n_fft
+uto_next_checkbox
+model_name
+dataset_name
+meta_out_fpath
+mel_channels
+vars
+real_time_factor
+left_duration
+symbols
+			error_message
+_valid_symbol_set
+split_infos[i][1]
+next_state)
+ostnet_num_layers
+before
+tower_encoder_cond_outputs
+en_ax
+oading_bar
+folded[i]
+max_seq_len
+I_e
+k_size
+nr_mix
+ize
+_zero_state_tensors
+lr
+tower_inputs
+ow_mem
+x_old
+sampling_rate
+I_u
+param_string
+voc_res_blocks
+		start
+ataset_box
+I_coarse_e
+		embed_target
+inner_inner_out
+				cell_state
+speaker_ids
+el_outputs
+ynthesizer
+fig
+pad_left
+atch_norm1
+gta_fnames
+imilarity_bias
+cells,
+nc_conv_num_layers
+now
+prev_outputs
+			examples
+out_fpath
+_type_priorities
+name
+			self.global_step
+ptimize
+ncoder_box
+metadata_filename
+num_mels
+zoneout_outputs
+ksi_min
+win_length
+mode
+l1
+done
+rowser_browse_button
+sys.excepthook
+enerate_button
+m_t
+mel_range
+tterances
+segment_durations
+speaker_dirs
+inputs
+energy
+voc_pad
+conv1d_output
+total_before_loss
+aux_idx
+pad_right
+_fine
+		target_spectrogram
+postnet
+ogs[name]
+out
+grad_device
+max_target_len
+ias_e
+post_condition
+:]
+res
+args.datasets
+projected
+ret
+gen_rate
+fx
+temp_head
+log_dir
+efore_loss
+start_times
+eer
+ample_data[param_name]
+eval_model
+inv_stdv
+rojections_layout
+Utterance.__eq__
+gridspec_kw
+args
+lout_float
+		self._token_pad
+log_scale_min
+			n
+ower_targets_lengths
+_dollars_re
+remainder
+ll_items
+			f
+batch_str
+loss_device
+ata
+ocoder_box
+num_generated
+centered_y
+	req
+mel_window_length
+before_loss
+w
+frames_batch
+input_lengths
+voc_mode
+		self._pad
+basenames
+mu_law
+top_token_prediction
+gradient_norms
+wav_slices
+onv2
+dBFS_change
+		text
+bw_state)
+feeder
+atasets_root
+before_losses
+	context
+nputs
+ndent
+message
+nframes
+(tacotron_batch_size
+grads
+post_cbhg
+priority
+				finished
+voc_batch_size
+frame_step
+synthesizer
+encoder_wav
+		train_indices
+feed_dict[self.targets]
+checkpoint
+argmax
+		targets_lengths
+2
+		remainder
+max_size
+			self._metadata
+eval_loss
+tiled_embed_targets
+bw_cell
+rop_rate
+			output_shape_with_unknown_batch
+preemphasis
+mean_l1
+wav_fnames
+whitespace
+cope
+int16_max
+ogs
+log_cdf_plus
+padding
+		self._test_meta
+out_fine
+R_hidden
+extended_len
+rst
+total_loss
+dataset_root
+noise_mu2
+tfr
+radients
+mask[-1]
+ower_mel_outputs
+target
+synthesizer_items
+wav_fpaths
+stm
+_whitespace_re
+		self._attention_layer_size
+_decimal_number_re
+r
+		self.conv_output_shape
+		LSTM_input
+silence_len
+		self._train_meta
+		self._train_offset
+ower_inputs
+result
+cleaner
+decoder_cell
+		memory_length
+_inv_mel_basis
+mplementation_win
+tower_enc_conv_output_shape
+		test_size
+fmin
+modified_hp
+min_level_db
+bits
+sentences
+mel_max_abs_value
+		stop_tokens
+mel_fpath
+max_wave_length
+output
+all_params
+ll_vars
+model_embedding_size
+atio
+ogs[-1]
+maxpool_output
+args.models_dir
+		meta
+ext_prompt
+after_loss
+a4_t
+split_infos
+200
+			sample_ids
+optimizer
+p_inputs
+utterances_root
+hparams
+x_round
+hw
+		self._stop_projection
+inv_argmax
+linear_losses
+ighwaynet_layers
+device
+			self._batch_size
+masked_loss
+eval_plot_dir
+earning_rate
+ower_after_loss
+tower_mel_targets
+partials_n_frames
+speakers_done
+	_run_name
+atch_norm
+m
+log_probs
+onv_out
+fpaths
+cmudict
+			inputs
+cleaner_names
+raw_embed
+Optional[int]
+og_window
+tower_embedded_inputs
+			self._reduction_factor
+		self._cumulate
+stop_at_any
+text
+labels
+heckpoint_fpath
+			token_targets
+padded
+		input_data
+colors
+highway_input
+log_text
+ayers_sizes
+checkpoint_state
+p["lr"]
+sources_fpath
+samples_per_frame
+segment_durations[j]
+layout
+parameters
+sim_matrix
+voc_compute_dims
+_format
+gru_cell.weight_hh.data
+folded
+rojection_win
+lin_t
+char_embedding_meta
+R_e,
+p.len2]
+num_folds
+_id_to_symbol
+ksi
+thresholds
+ower_linear_loss
+		previous_alignment_history
+fw_cell
+speaker_names
+embeds
+H
+			self._ratio
+		r
+p
+after_losses
+args.voc_dir
+ones
+words
+lay_button
+gpus
+ool_size
+f_outputs
+anglophone_nationalites
+bar
+mel_window_step
+eval_dir
+		self._helper
+h
+xk_prev
+loss_func
+coord
+		self._prenet
+wave_dBFS
+ocode_button
+end_time
+mask_encoder
+x
+test_loader
+grad
+rms
+name_msgs
+		n
+model_hidden_size
+job
+fter_loss
+window_end
+ext_items
+ctivation
+num
+projections
+vad_decision
+run_name
+log_sigma_k
+		self._session
+save_str
+stats
+onv1
+attention_mechanism
+ower_alignments
+config.allow_soft_placement
+label
+targets
+3
+features
+feed_dict[self.speaker_embeddings]
+dataset_string
+	expanded_alignments
+target_length
+tterance_cycler
+		self._test_offset
+			self._targets
+j}
+eerlibrispeech_datasets
+next_attention_state
+s
+x_final
+k_steps
+batch_size
+residual
+speakers_per_batch
+S
+window_size
+		examples
+mel_basis
+20
+alignments_fpath
+init_step
+		self._convolutions
+j]
+c
+f
+cdf_plus
+embedded_inputs
+checkpoint_fpath
+decoder_lstm
+total_scale
+			self._output_dim
+_slack_url
+wav_dir
+reg_weight
+_scale
+embedding
+voc_fc_dims
+p_stop_token_targets
+mel_spectrogram
+utterance
+weights_fpath
+args.hparams
+pos_weight
+rojections
+target_lengths
+color
+ext_file
+height
+mask[0]
+wav_mean
+logit_probs
+			im
+tower_embed_targets
+ecay_rate
+inear_loss
+oss_device
+		attention
+new_h)
+pp
+c3
+avg_loss
+#tfr
+conv_outputs
+stretch
+mark
+rames_fpath
+odel
+eval_losses
+		conv_output
+model_dir
+synth
+tate_is_tuple
+inear
+voc_res_out_dims
+		data_len
+		self._attention_mechanism
+pad_head
+_coarse
+		extra_test
+p_layers
+inp
+keep_speaker_ids
+body
+b_ends
+data_loader
+esnet
+plit_infos
+angles
+	_file
+audio_norm_target_dBFS
+op_length
+metadat_fpath
+c2
+time_window
+_run_name
+_batches_per_group
+means
+mel_normalization
+value
+n
+			queue
+R_fine_e
+new_c
+input_dirs
+min_in
+out_coarse
+		size
+new_h
+		self._coord
+prenet
+		self._frame_projection
+new_state
+conv
+			frame_shift_ms
+cents
+tower_projected_residual
+is
+vk
+encoder_outputs
+n_speakers
+embeds_raw
+lignments
+inner_cond
+hop_size
+im
+2048
+		self._cleaner_names
+peaker_embeddings
+min_umap_points
+voc_gen_batched
+gru_cell.weight_ih.data
+(?
+fine_input
+len2]
+_number_re
+voc_seq_len
+mels[i]
+parts
+pad
+clipped_gradients
+			batch
+total_len
+I_fine_e
+start_time
+mel_n_channels
+psample
+optimizer.param_groups[0]["lr"]
+tileable_embed_targets
+preds
+erbose
+			batches
+speakers
+upsample_kernel_size[0]
+expanded_g
+		self.location_layer
+wave_len
+ession
+ample_rate
+tower_stop_token_targets
+Utterance
+state_fpath
+speaker_name
+_model
+		inputs
+ighway_units
+voc_rnn_dims
+atch_norm2
+i
+	xlabel
+checkpoints_dir
+mel_filename
+device_name
+inner_inner_cond
+args.in_dir
+idden_size
+sample_rate
+		hidden_representation
+y
+model
+800
+ecay_steps
+			processed_location_features
+b_fine_e
+		projections_input
+prev_h)
+border_pattern
+bsize
+_file
+post_outputs
+oneout
+sources
+shape
+last_wav_range
+b_fine_r
+inear_outputs
+pcm_wave
+			hours
+proj2_output
+speed
+_device
+one_hot
+(len
+			self._lengths
+peakers
+ower_stop_token_loss
+input_max_len
+				self._ratio
+unsigned
+proj1_output
+gru_cell.bias_ih.data
+tileable_shape
+valid_symbols
+saver
+max_log_lines
+4
+len2
+win
+noisy_wav
+NoiseProfile
+logger
+_comma_number_re
+tterances_per_speaker
+remaining
+match
+elu
+opt
+num_proj
+D
+oss_win
+voxceleb_datasets
+breaks
+(1
+ame
+artials
+libritts_datasets
+elapsed
+		input_lengths
+T
+amples_fpaths
+ode
+loader
+ei_vk
+ummarize_every
+stop_projection
+loss
+avg_grads
+total_stop_token_loss
+utterances
+clip_mels_length
+in_fpath
+		self._initial_state
+ake_generated_button
+reducer
+		mel_targets
+encoder_fpaths
+ower_stop_token_targets
+unfolded
+steps
+t
+		thread
+top_token_loss
+alignments
+silence
+b_starts
+		previous_alignments
+			self._placeholders
+_inflect
+tower_input_lengths
+summary_writer
+cumulated_alignments
+metadata_file
+embed_fpath
+mask_matrix
+inference_n_frames
+onv_channels
+cmudict[word]
+plit_size
+dense
+		split_infos
+mplementation_string
+np_targets
+audio_mask
+enc_conv_output_shape
+log_pdf_mid
+embed_dir
+		pred_spectrogram
+encoder_cond_outputs
+5)
+rowser_load_button
+		batches
+eval_wav_dir
+				feed_dict
+map_ax
+segments[j]
+joined_duration
+ower_before_loss
+colormap
+sim_matrix2
+M
+embeds_loss
+array_padded
+		self._cell
+step
+oss_fn
+nationalities
+other_datasets
+inner_out
+backup_dir
+ower_decoder_output
+_
+min_level
+hidden
+tower_targets_lengths
+os.environ["TF_CPP_MIN_LOG_LEVEL"]
+dollars
+target_pad
+sources_file
+random_func
+samples_per_window
+cmap
+stop_token_losses
+cbar
+	im
+processor
+rnn_input
+sig_offsets
+speaker_out_dir
+_abbreviations
+#_arpabet
+r_pad
+h2
+residual_projection
+h1
+dataset
+hape
+ave_fpath
+mel_slices
+generated_wav
+frames
+		narrow_tfr
+		self._embed_dir
+win_size
+max_speakers
+24000
+log
+			self._hparams
+stop_token_loss
+ref_level_db
+coarse_input_proj
+sequence
+	v_a
+vad
+ayers
+cell)
+start
+pronunciation
+voc_gen_at_checkpoint
+mel_offsets
+wav
+Utterance.__hash__
+p_mel_targets
+			self._train_offset
+y_hat
+_ordinal_re
+hp
+encoder_cell
+ower_linear_targets
+regularization
+tep_times
+posterior
+profile
+embedding.tensor_name
+line
+next_cell_state
+andom_utterance_button
+elper
+		self._hparams
+_mel_basis
+datasets
+temp
+default
+j
+cdf_min
+esnet_stretch
+			energy
+total_linear_loss
+embed
+linears
+aa
+prev_c
+fine_input_proj
+ad
+synth_dir
+prev_h
+tterance_box
+parser
+texts
+1200
+			next_inputs
+ynthesizer_box
+len1
+preprocess_func
+segment_times
+	dtype
+ax
+gradients
+pdate_every
+projection_fpath
+root_layout
+		self._mel_dir
+partial_embeds
+isabled
+centroids_excl
+global_step
+loss_window
+device_input
+backup_fpath
+			start
+feed_dict
+			next_state
+priorities
+voice_flags
+fade_in
+			eval_queue
+nits
+masked_l1
+aux_split
+spec_ax
+learning_rate
+	num_units
+right_duration
+a1
+a3
+a2
+a4
+coverage
+		thread.daemon
+nv_name
+ower_mel_targets
+nn2
+nn1
+			self.gta
+xi_w
+mel_dir
+top_button
+e
+test_indices
+meta_folder
+utterances_per_speaker
+apply_preemphasis
+mappable
+mask
+		max_len
+hannels
+vad_moving_average_width
+frame_projection
+pbar
+u
+learning_rate_init
+sub_basename
+	b_a
+running_loss

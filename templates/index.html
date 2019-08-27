@@ -1,0 +1,270 @@
+{% extends "base.html" %}
+{% block content %}
+<template id="result-li-template">
+    <li class="result-li clearfix">
+        <div class="result-attr query"></div>
+        <div class="result-attr repo"></div>
+        <div class="result-attr star"></div>
+    </li>
+</template>
+
+<div class='header-section section'>
+    <div class="center-content">
+        <div class="header-title">Best Naming</div>
+    </div>
+</div>
+
+<div class='description-section section'>
+    <div class="center-content">
+        <div class="intro-description">「Best Naming」は日本語から最適な命名を提案します。プログラミングって難しいですよね。特に変数の命名は超難しいです。Best Namingでは日本語の入力から素晴らしい命名を提案します。</div>
+    </div>
+</div>
+
+<div class='form-section'>
+
+  <!-- <div>INPUT</div> -->
+<!--   <div class="form-textbox">
+    <input id="title-input-small" required=".+" type="text"/>
+    <div class="error">
+    </div>
+  </div>
+ -->
+  <div>
+    <input id="text-input" class="textbox" type="text" name="q" placeholder="Search">
+  </div>
+</div>
+<div class='result-section'>
+  <div class="trans-result"></div>
+  <ul class='result-list'>
+  </ul>
+</div>
+
+{% endblock %}
+
+{% block extrajs %}
+<script type="text/javascript">
+    $(function () {
+        let current_input_value = ''
+        const $text_input = $('#text-input');
+        $text_input.on('keydown', (e) => {
+            if (e.key == 'Enter') {
+                search_query(e.target.value);
+            }
+        });
+
+        // 検索メソッド
+        const search_query = (query) => {
+          console.log(query)
+          if (query == '') {
+              console.log('query is empty.')
+              return
+          }
+
+          if (current_input_value == query){
+              console.log('searched query')
+              return
+          }
+          current_input_value = query
+
+          $('.result-list .result-li').remove();
+
+          const search_url = `http://localhost:3000/search?lang=ja&q=${query}`
+          console.log(search_url)
+          $.ajax({
+                url: search_url,
+                type: 'GET',
+            })
+            // Ajaxリクエストが成功した時発動
+            .done((data) => {
+                set_result(data);
+            })
+            // Ajaxリクエストが失敗した時発動
+            .fail((data) => {
+                console.log(data);
+            })
+            // Ajaxリクエストが成功・失敗どちらでも発動
+            .always((data) => {
+            });
+        }
+
+
+        const set_result = (data) => {
+          console.log(data);
+
+          $('.trans-result').text(data['trans_en'])
+
+          // リスト埋める
+          add_display_result_li({'var': '変数', 'star': 'スター数', 'repo': 'レポジトリ名'})
+          for (const sim of data['top_similar']){
+            console.log(sim);
+            add_display_result_li(sim);
+          }
+        }
+
+        const add_display_result_li = (data) => {
+            console.log(data);
+            const result_li = $('#result-li-template')[0].content;
+            const result_li_clone = document.importNode(result_li, true);
+            $('.query', result_li_clone).text(data.var);
+            $('.star', result_li_clone).text(data.star);
+            $('.repo', result_li_clone).text(data.repo);
+            $('.result-list').append(result_li_clone);
+        }
+
+    });
+</script>
+{% endblock %}
+
+
+{% block extracss %}
+<style>
+.base-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+.center-content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.header-content {
+}
+ 
+.section {
+    height: 40vh;
+    position: relative;
+}
+
+.header-title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 4rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.description-section {
+  background-color: #f6f1ba;
+  color: #777;
+}
+
+.intro-description {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    width: 80%;
+}
+
+#title-input-small {
+  height: 3rem;
+  width: 70vw;
+}
+
+.form-section {
+  position: relative;
+  text-align: center;
+  padding: 5rem;
+  padding-bottom: 0;
+}
+
+.form-textbox {
+
+}
+
+*::-webkit-input-placeholder {
+    color: #777;
+}
+*:-moz-placeholder {
+    color: #777;
+}
+*::-moz-placeholder {
+    color: #777;
+}
+*:-ms-input-placeholder {
+    color: #777;
+}
+
+h1 {
+  color: #55acee;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 72px;
+  margin-top: 50px;
+}
+
+.textbox {
+  /*margin-top: 50px;*/
+  border: 1px solid #acacac;
+  /*color: #777;*/
+  opacity: .7;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 450px;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  font-size: 16px;
+  outline: none;
+  /*background-color: #acacac;*/
+}
+
+.textbox:focus {
+  width: 500px;
+  outline: none;
+}
+
+.result-list {
+  width: 100%;
+  height: 70vh;
+  /*border: 1px solid #acacac;*/
+}
+
+.result-li {
+  display: flex;
+  flex-direction: center;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid #acacac;
+}
+
+.result-li:nth-child(2n) {
+  background-color: #F9F9F9;
+}
+
+.result-attr {
+  padding: 10px;
+}
+
+.result-attr.repo {
+  width: 40vw;
+}
+
+.result-attr.query {
+  width: 30vw;
+}
+
+.result-attr.star {
+  width: 14vw;
+}
+
+.trans-result {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+/*
+.result-li:nth-child(2n+1) {
+  background-color: #F0FAE2;
+}*/
+
+</style>
+{% endblock %}
